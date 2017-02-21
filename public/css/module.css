@@ -593,8 +593,9 @@ h2 {
   header .treebtn {
     position: absolute;
     height: 50px;
-    right: 20px;
-    top: 58px;
+    width: 99%;
+    left: 0;
+    top: 48px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -1784,7 +1785,8 @@ h2 {
     margin-right: 1.13636%; }
   .new_article .article_list .article_title {
     border-bottom: 2px solid #ea6b02;
-    height: 50px; }
+    height: 50px;
+    margin-top: -15px; }
   .new_article .article_list .article_title .t-title {
     height: 50px;
     float: left;
@@ -3128,6 +3130,9 @@ h2 {
     margin-left: 1.13636%;
     margin-right: 1.13636%;
     margin-bottom: 20px; } }
+
+.slide {
+  height: 220px; }
 
 .slide .book {
   height: 200px; }
