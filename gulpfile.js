@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     glob = require('glob'),
     
     sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber'),
     browserSync = require('browser-sync').create(),
 
@@ -11,8 +12,6 @@ var gulp = require('gulp'),
 
     data = require('gulp-data'),
     path = require('path'), 
-
-
     bourbon = require("node-bourbon").includePaths;
 
 
@@ -26,6 +25,10 @@ gulp.task('sass', function () {
         .pipe(sass({
             includePaths: [bourbon, 'node_modules/susy/sass']
           }))
+        .pipe(autoprefixer({
+                browsers: ['last 2 versions'],
+                cascade: false
+            }))
         .pipe(sass({errLogToConsole: true}))
         .pipe(gulp.dest('./public/css'))
 });
@@ -46,7 +49,6 @@ function getJsonData (file, cb) {
     });
 }
 gulp.task('twig', function () {
-
     return gulp.src('./views/*.twig')
         .pipe(plumber({
           errorHandler: function (error) {
@@ -75,7 +77,6 @@ gulp.task('browser-sync', function() {
         "public/*.html",
         "public/img/",
     ];
-
     browserSync.init(includePaths,{
         server: {
             baseDir: "./public/"
@@ -84,19 +85,17 @@ gulp.task('browser-sync', function() {
 });
 
 
-
 // watch
 gulp.task('watch',function(){
     gulp.watch('./assets/sass/*.sass', ['sass']);
-    gulp.watch(['./views/*.twig','./public/_data/*.json'],['twig-watch']);
+    gulp.watch(['./views/*.twig','./views/_template/*.twig','./public/_data/*.json'],['twig-watch']);
     gulp.watch('./public/img/*.jpg', browserSync.reload);
     gulp.watch('./public/img/*.png', browserSync.reload);
-    // gulp.watch('./*.twig', browserSync.reload);
 })
 
 
 // default task
-gulp.task('default', ['sass', 'watch','twig', 'browser-sync']);
+gulp.task('default', ['sass', 'watch','twig','browser-sync']);
 
 
 
