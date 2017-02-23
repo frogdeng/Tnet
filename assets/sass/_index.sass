@@ -119,6 +119,7 @@ h2
 header
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		width: 100%
 		height: 150px
 		position: relative
 		.logo
@@ -172,7 +173,7 @@ header
 			cursor: pointer
 			z-index: 1800
 		.aside
-			position: absolute
+			position: fixed
 			width: 100%
 			height: 2000px
 			background: rgba(0,0,0, .8)
@@ -181,6 +182,7 @@ header
 			right: -100%
 			top: -30px
 			z-index: 1200
+			overflow-x: hidden
 			ul
 				margin-top: 60px
 				li
@@ -216,18 +218,20 @@ header
 						.goback
 							margin: 0 10px
 							color: #FFF
-							width: 55px
+							width: 200px
 							height: 48px
 							margin-top: -20px
 							margin-left: 20px
+							padding-left: 20px
 							cursor: pointer
-							background-color: #111
+							background-color: #555
 							// border: 1px solid #444
 							display: flex
-							justify-content: center
+							justify-content: flex-start
 							align-items: center
 							i 
 								font-size: 20px
+								margin-right: 10px
 						ul
 							position: absolute
 							width: 100%
@@ -303,7 +307,7 @@ header
 			cursor: pointer
 			z-index: 1800
 		.aside
-			position: absolute
+			position: fixed
 			width: 100%
 			height: 2000px
 			background: rgba(0,0,0, .8)
@@ -312,6 +316,7 @@ header
 			right: -100%
 			// right: 0%
 			top: -30px
+			overflow-x: hidden
 			z-index: 1200
 			ul
 				margin-top: 60px
@@ -348,18 +353,25 @@ header
 						.goback
 							margin: 0 10px
 							color: #FFF
-							width: 55px
+							width: 200px
 							height: 48px
 							margin-top: -20px
 							margin-left: 20px
+							padding-left: 20px
 							cursor: pointer
-							background-color: #111
+							background-color: #555
 							// border: 1px solid #444
 							display: flex
-							justify-content: center
+							justify-content: flex-start
 							align-items: center
 							i 
 								font-size: 20px
+								margin-right: 10px
+						.m-second_title
+							font-size: 20px
+							color: #FFF
+							top: 0
+
 						ul
 							position: absolute
 							width: 100%
@@ -396,7 +408,7 @@ header
 			justify-content: flex-end
 			align-items: center
 			p 
-				font-size: 13px
+				font-size: 14px
 				color: #888
 				margin-right: 12px
 			a 
@@ -623,7 +635,7 @@ header
 			.login_info_btn
 				position: absolute	
 				width: 52px
-				height: 43px
+				height: 41px
 				background: #ea6c00
 				left: 0px
 				top: 161px
@@ -969,18 +981,18 @@ header
 			align-items: flex-start
 			.thumbnail_img
 				margin-right: 15px
-				width: 33%
+				width: 30%
 
 			.article_content
 				width: 65%
 				h6
 					font-size: 18px
-					margin-bottom: 5px
+					margin-bottom: 10px
 					line-height: 1.2
 					color: #393939
 				p 
 					font-size: 14px
-					line-height: 1.4
+					line-height: 1.5
 					a 
 						color: #888
 
@@ -1045,7 +1057,7 @@ header
 			align-items: center
 			.thumbnail_img
 				margin-right: 15px
-				width: 33%
+				width: 37%
 
 			.article_content
 				width: 65%
