@@ -21,8 +21,24 @@ $(document).ready(function(){
 
 
   $(".login_info_btn").click(function(){
-		 $(this).delay(200).toggleClass("login_active");
+     $(this).delay(200).toggleClass("login_active");
       $('.login_info_content').toggleClass("login_info_content_go");
+
+    });
+
+
+  $(".go_submenu").click(function(){
+      $('.m-second_bg').addClass("second-open");
+    });
+
+  $(".second-goback").click(function(){
+      $('.m-second_bg').removeClass("second-open");
+      
+    });
+
+
+  $(".hamburg").click(function(){
+      $('.m-second_bg').removeClass("second-open");
 
   	});
 
