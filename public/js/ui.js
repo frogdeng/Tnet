@@ -12,7 +12,16 @@ $(document).ready(function(){
     maxSlides: 5,
     moveSlides: 1,
     slideMargin: 10
+  });  
+
+
+  $('.slider3').bxSlider({
+    slideWidth: 630,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
   });
+
 
   $(".hamburg").click(function(){
      $('.aside').delay(200).toggleClass("hamburg-open");
