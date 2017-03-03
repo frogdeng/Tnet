@@ -3,23 +3,30 @@ $(document).ready(function(){
     slideWidth: 300,
     minSlides: 2,
     maxSlides: 2,
+    pager: false,
     slideMargin: 10
   });
+
 
   $('.slider2').bxSlider({
     slideWidth: 230,
     minSlides: 2,
     maxSlides: 5,
     moveSlides: 1,
+    pager: false,
     slideMargin: 10
   });  
 
 
   $('.slider3').bxSlider({
-    slideWidth: 630,
+    slideWidth: 1200,
     minSlides: 1,
     maxSlides: 1,
-    moveSlides: 1
+    moveSlides: 1,
+    auto: true,
+    controls: false
+
+
   });
 
 
