@@ -754,12 +754,13 @@ h2 {
     align-items: center;
     margin-bottom: 0px; }
   .footer_link .l-link a {
+    width: 100px;
     color: #000;
     display: block;
     text-align: left;
     font-size: 16px;
     margin-bottom: 0px;
-    margin-right: 30px; }
+    margin-right: 0px; }
   .footer_link .v-counter {
     width: 200px;
     font-size: 14px;
@@ -924,6 +925,8 @@ h2 {
     width: 120px;
     text-align: center;
     font-size: 13px; }
+  .desk_menu .search_part .search_select select {
+    border: none; }
   .desk_menu .search_part input {
     height: 40px;
     width: 80%;
@@ -1012,6 +1015,8 @@ h2 {
     width: 120px;
     text-align: center;
     font-size: 13px; }
+  .desk_menu .search_part .search_select select {
+    border: none; }
   .desk_menu .search_part input {
     height: 40px;
     width: 80%;
@@ -1108,6 +1113,8 @@ h2 {
     width: 120px;
     text-align: center;
     font-size: 13px; }
+  .desk_menu .search_part .search_select select {
+    border: none; }
   .desk_menu .search_part input {
     height: 40px;
     width: 60%;
@@ -1258,7 +1265,7 @@ h2 {
     font-size: 14px;
     line-height: 1.4; }
   .new_article .article_item .article_content p a {
-    color: #888; } }
+    color: #444; } }
 
 @media (min-width: 620px) {
   .new_article {
@@ -1357,7 +1364,7 @@ h2 {
     font-size: 14px;
     line-height: 1.5; }
   .new_article .article_item .article_content p a {
-    color: #888; } }
+    color: #444; } }
 
 @media (min-width: 950px) {
   .new_article {
@@ -1459,7 +1466,7 @@ h2 {
     font-size: 14px;
     line-height: 1.5; }
   .new_article .article_item .article_content p a {
-    color: #888; } }
+    color: #444; } }
 
 @media (min-width: 0px) {
   .common_title {
@@ -1611,7 +1618,7 @@ h2 {
     line-height: 1.5;
     color: #000; }
   .hot_issue .issue_content p a {
-    color: #888; } }
+    color: #444; } }
 
 @media (min-width: 620px) {
   .hot_issue {
@@ -1668,7 +1675,7 @@ h2 {
     line-height: 1.5;
     color: #000; }
   .hot_issue .issue_content p a {
-    color: #888; } }
+    color: #444; } }
 
 @media (min-width: 950px) {
   .hot_issue {
@@ -1724,7 +1731,7 @@ h2 {
     line-height: 1.5;
     color: #000; }
   .hot_issue .issue_content p a {
-    color: #888; } }
+    color: #444; } }
 
 @media (min-width: 0px) {
   .voting {
@@ -1873,27 +1880,17 @@ h2 {
     margin-right: 1.19048%; }
   .industry .insustry_right .new_message {
     margin-bottom: 40px; }
-  .industry .insustry_right .new_message a {
-    display: block;
+  .industry .insustry_right .new_message ul {
+    list-style-image: url("../img/circle.png");
+    list-style-type: circle; }
+  .industry .insustry_right .new_message ul li {
+    margin-left: 20px;
+    margin-bottom: 20px; }
+  .industry .insustry_right .new_message ul li a {
     color: #000;
     line-height: 1.3;
     margin-bottom: 10px;
     margin-top: 10px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center; }
-  .industry .insustry_right .new_message a .circle {
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #999;
-    margin-right: 7px; }
-  .industry .insustry_right .new_message a p {
-    width: 90%;
     word-wrap: break-word;
     word-break: break-all; }
   .industry .insustry_right .Tnet_video .video_des {
@@ -1973,27 +1970,16 @@ h2 {
     margin-right: 1.5625%; }
   .industry .insustry_right .new_message {
     margin-bottom: 40px; }
-  .industry .insustry_right .new_message a {
-    display: block;
+  .industry .insustry_right .new_message ul {
+    list-style-type: circle; }
+  .industry .insustry_right .new_message ul li {
+    margin-left: 20px;
+    margin-bottom: 20px; }
+  .industry .insustry_right .new_message ul li a {
     color: #000;
     line-height: 1.3;
     margin-bottom: 10px;
     margin-top: 10px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center; }
-  .industry .insustry_right .new_message a .circle {
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #999;
-    margin-right: 7px; }
-  .industry .insustry_right .new_message a p {
-    width: 90%;
     word-wrap: break-word;
     word-break: break-all; }
   .industry .insustry_right .Tnet_video .video_des {
@@ -2072,27 +2058,16 @@ h2 {
     margin-right: 1.13636%; }
   .industry .insustry_right .new_message {
     margin-bottom: 40px; }
-  .industry .insustry_right .new_message a {
-    display: block;
+  .industry .insustry_right .new_message ul {
+    list-style-type: circle; }
+  .industry .insustry_right .new_message ul li {
+    margin-left: 20px;
+    margin-bottom: 20px; }
+  .industry .insustry_right .new_message ul li a {
     color: #000;
     line-height: 1.3;
     margin-bottom: 10px;
     margin-top: 10px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center; }
-  .industry .insustry_right .new_message a .circle {
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #999;
-    margin-right: 7px; }
-  .industry .insustry_right .new_message a p {
-    width: 90%;
     word-wrap: break-word;
     word-break: break-all; }
   .industry .insustry_right .Tnet_video .video_des {
@@ -2146,28 +2121,17 @@ h2 {
     margin-left: 1.19048%;
     margin-right: 1.19048%;
     margin-bottom: 30px; }
-  .hot_click .click_review a {
-    display: block;
+  .hot_click .click_review ul {
+    list-style-image: url("../img/circle.png");
+    list-style-type: circle; }
+  .hot_click .click_review ul li {
+    margin-left: 20px;
+    margin-bottom: 20px; }
+  .hot_click .click_review ul li a {
     color: #000;
     line-height: 1.3;
     margin-bottom: 10px;
     margin-top: 10px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center; }
-  .hot_click .click_review a .circle {
-    display: block;
-    float: left;
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background: #999;
-    margin-right: 10px; }
-  .hot_click .click_review a p {
-    width: 90%;
     word-wrap: break-word;
     word-break: break-all; }
   .hot_click .books_info {
@@ -2208,28 +2172,17 @@ h2 {
     margin-left: 1.5625%;
     margin-right: 1.5625%;
     margin-bottom: 30px; }
-  .hot_click .click_review a {
-    display: block;
-    height: 20px;
+  .hot_click .click_review ul {
+    list-style-image: url("../img/circle.png");
+    list-style-type: circle; }
+  .hot_click .click_review ul li {
+    margin-left: 20px;
+    margin-bottom: 20px; }
+  .hot_click .click_review ul li a {
     color: #000;
     line-height: 1.3;
     margin-bottom: 10px;
     margin-top: 10px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center; }
-  .hot_click .click_review a .circle {
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #999;
-    margin-right: 7px; }
-  .hot_click .click_review a p {
-    width: 90%;
     word-wrap: break-word;
     word-break: break-all; }
   .hot_click .books_info {
@@ -2269,28 +2222,17 @@ h2 {
     float: left;
     margin-left: 1.13636%;
     margin-right: 1.13636%; }
-  .hot_click .click_review a {
-    display: block;
-    height: 20px;
+  .hot_click .click_review ul {
+    list-style-image: url("../img/circle.png");
+    list-style-type: circle; }
+  .hot_click .click_review ul li {
+    margin-left: 20px;
+    margin-bottom: 20px; }
+  .hot_click .click_review ul li a {
     color: #000;
-    line-height: 1.4;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center; }
-  .hot_click .click_review a .circle {
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #999;
-    margin-right: 7px; }
-  .hot_click .click_review a p {
-    width: 90%;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    margin-top: 10px;
     word-wrap: break-word;
     word-break: break-all; }
   .hot_click .books_info {
@@ -2569,4 +2511,4 @@ body {
   zoom: 1; }
 
 a {
-  color: #888; }
+  color: #444; }
